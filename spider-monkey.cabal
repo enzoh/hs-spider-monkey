@@ -1,0 +1,31 @@
+name:          spider-monkey
+version:       0.1.0
+synopsis:      A JavaScript engine.
+license:       GPL-3
+license-file:  LICENSE
+copyright:     2017 DFINITY Stiftung
+author:        Enzo Haussecker <enzo@dfinity.org>
+maintainer:    Enzo Haussecker <enzo@dfinity.org>
+stability:     Experimental
+category:      Language, Javascript
+homepage:      https://github.com/dfinity/hs-spider-monkey
+bug-reports:   https://github.com/dfinity/hs-spider-monkey/issues
+build-type:    Simple
+cabal-version: >=1.10
+
+library
+  build-depends:
+    base,
+    bindings-DSL
+  default-language:
+    Haskell2010
+  exposed-modules:
+    Language.Javascript.Engine
+  extra-libraries:
+    hs_mozilla
+  ghc-options:
+    -O2
+    -Wall
+    -fno-warn-unused-top-binds
+  hs-source-dirs:
+    src

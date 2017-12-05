@@ -1,0 +1,10 @@
+allow-different-user: true
+build:
+  copy-bins: true
+extra-include-dirs:
+- include
+extra-lib-dirs:
+- lib
+packages:
+- .
+resolver: lts-9.17
